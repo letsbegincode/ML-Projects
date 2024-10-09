@@ -35,3 +35,34 @@ To run this project, you will need the following libraries:
 - scikit-learn
 - matplotlib
 - seaborn
+
+## Usage
+- Clone this repository to your local machine.
+- Download the dataset from Kaggle and place it in the project directory.
+- Run the Jupyter Notebook (fraud_detection.ipynb) in Google Colab or your local Jupyter environment.
+
+## Data Preprocessing
+The preprocessing steps include:
+
+- Data loading and exploration.
+- Handling missing values.
+- Feature selection using techniques like SelectKBest.
+- Addressing class imbalance using SMOTE (Synthetic Minority Over-sampling Technique).
+
+## Model Training
+We trained a Logistic Regression model with hyperparameter tuning using GridSearchCV to optimize performance. The model was evaluated using various metrics, including precision, recall, and F1-score.
+
+## Results
+              precision    recall  f1-score   support
+
+           0       0.95      0.94      0.95     70804
+           1       0.90      0.92      0.91     42497
+
+    accuracy                           0.93    113301
+   macro avg       0.93      0.93      0.93    113301
+weighted avg       0.93      0.93      0.93    113301
+
+
+## Conclusion
+The Logistic Regression model, enhanced through data preprocessing techniques and hyperparameter optimization, provides a strong foundation for effective credit card fraud detection. Future work may focus on further improving the model’s performance by exploring advanced algorithms and feature engineering techniques.
+
